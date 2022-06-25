@@ -20,7 +20,37 @@ html {
     background: red;
 }
 
+.navbar {
+    display: flex;
+}
 
+.navbar-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-social {
+    display: contents;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.social-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-list li {
+    color: ;
+}
 
 
 
