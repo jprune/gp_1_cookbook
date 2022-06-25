@@ -14,10 +14,60 @@ html {
     background-color: white;
 }
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.recipe-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-content: center;
+    justify-content: space-around;
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+
+.recipe-grid-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 4rem 0rem 4rem;
+    text-align: center;
+}
+
+.recipe-grid-card h4 {
+    color: rgb(175, 175, 175);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.recipe-grid-card h2 {
+    font-weight: 400;
+}
+
+.recipe-grid-card a {
+    color: #F93F23;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.recipe-grid-card hr {
+    display: block;
+    border-right: 10rem solid lightgray;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
 /*
 color pallet 
 Logo(only) - #EF4229
-the rest Orange/red - #HF93F23
+the rest Orange/red - #F93F23
 Background color - White #FFF
 Grey buttons - #333333
 Recipe yellow background - #FAEFC8
