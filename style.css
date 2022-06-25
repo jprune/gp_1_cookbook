@@ -17,39 +17,66 @@ html {
 .header-container {
     width: 100%;
     height: 60px;
-    background: red;
-}
-
-.navbar {
+    background: goldenrod;
     display: flex;
 }
 
-.navbar-left {
+.Navbar {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    width: 100%;
+    margin: auto;
+    
+    
+    
 }
 
-.navbar .logo {
+#menu {
+    font-size: 35px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    color: gray;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: #F93F23;
+}
+
+.logo h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.logo i {
+    font-size: 30px;
+    color: white;
 }
 
 .nav-social {
-    display: contents;
-    justify-content: center;
-    flex-direction: row;
+    display: flex;
+    
+    
+    margin-right: 120px;
+    
+
 }
 
 .social-list {
     list-style-type: none;
     display: flex;
-    align-items: center;
 }
 
+
 .social-list li {
-    color: ;
+    color: #F93F23;
+    display: flex;
+    justify-content: center;
+    
+    font-size: 1.8em;
+    
 }
 
 
@@ -57,7 +84,7 @@ html {
 /*
 color pallet 
 Logo(only) - #EF4229
-the rest Orange/red - #HF93F23
+the rest Orange/red - #F93F23
 Background color - White #FFF
 Grey buttons - #333333
 Recipe yellow background - #FAEFC8
