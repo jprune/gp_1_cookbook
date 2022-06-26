@@ -29,7 +29,7 @@ header {
 
 .logo {
     cursor: pointer;
-    width: 10em;
+    display: flex;
     font-weight: 900;
     color: #F93F23;
 }
@@ -50,6 +50,8 @@ header {
 
 .nav-links {
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links li {
@@ -103,15 +105,9 @@ header a button:hover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    
-    
 }
 
-.header-container img {
 
-    
-    
-}
 
 
 
