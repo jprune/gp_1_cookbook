@@ -29,10 +29,16 @@ header {
 
 .logo {
     cursor: pointer;
+    width: 10em;
 }
 
 .menu {
-    
+    color: gray;
+    font-size: 30px;
+}
+
+.menu:hover {
+    color: #F93F23;
 }
 
 .nav-links {
@@ -43,18 +49,22 @@ header {
     display: inline-block;
     padding: 0px 10px;
     color: #F93F23;
+    font-size: 30px;
 }
 
-.nav-links a {
-
+.nav-links p {
+    display: inline-block;
+    align-items: center;
+    color: #F93F23;
+    font-family: 'Poppins';
 }
 
-.nav-links li a {
+.nav-links li i {
     transition: all 0.3s ease 0s;
 }
 
-.nav-links li a:hover {
-    color: black;
+.nav-links li i:hover {
+    color: gray;
 }
 
 header a button {
@@ -65,6 +75,7 @@ header a button {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    font-family: 'Poppins';
 }
 
 header a button:hover {
