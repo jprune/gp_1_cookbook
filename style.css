@@ -33,7 +33,7 @@ header {
     display: flex;
     font-weight: 900;
     color: #F93F23;
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* .logo i {
@@ -125,7 +125,7 @@ header a button:hover {
     display: flex;
     margin-top: 150px;
     color: #fff;
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 5em;
 }
 
@@ -190,6 +190,32 @@ header a button:hover {
 .search_wrap.search_wrap_6 .search_box .input{
 	padding-right: 145px;
 }
+
+/* Our Footer CSS section */
+
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    background-color: #F93F23;
+    padding: 70px 0;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer-col
+
+
+
 
 /*
 color pallet 
