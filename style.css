@@ -57,7 +57,7 @@ header {
 }
 
 .nav-links ul {
-    
+
 }
 
 .nav-links li {
@@ -73,6 +73,7 @@ header {
     align-self: center;
     color: gray;
     font-family: 'Poppins';
+    margin-right: 8px;
 }
 
 .nav-links li i {
