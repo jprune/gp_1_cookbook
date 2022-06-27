@@ -33,6 +33,7 @@ header {
     display: flex;
     font-weight: 900;
     color: #F93F23;
+    font-family: 'Source Serif Pro', serif;
 }
 
 /* .logo i {
@@ -42,7 +43,7 @@ header {
 
 .menu {
     color: gray;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .menu:hover {
@@ -77,15 +78,15 @@ header {
 
 .nav-links li i:hover {
     color: gray;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 20px 40px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 header a button {
     padding: 9px 25px;
-    background-color: gray;
-    color: #fff;
-    border: none;
-    border-radius: 50px;
+    background-color: transparent;
+    color: #F93F23;
+    border: 2px solid #F93F23;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     font-family: 'Poppins';
@@ -93,9 +94,10 @@ header a button {
 
 header a button:hover {
     background-color: rgba(249, 63, 35, 0.8);
+    color: #fff;
 }
 
-/* Main-container for the header section */
+/* Main-container for the header section and search bar */
 
 .header-container {
     position: relative;
@@ -162,11 +164,11 @@ header a button:hover {
 }
 
 .search_wrap .search_box .btn:hover{
-	background: #708bd2;	
+	background: #c13e20;
 }
 
 .search_wrap.search_wrap_6 .search_box .input{
-	border-radius: 50px;
+	border-radius: 8px;
 }
 
 .search_wrap.search_wrap_6 .search_box .btn {
@@ -182,7 +184,7 @@ header a button:hover {
 }
 
 .search_wrap.search_wrap_6 .search_box .btn{
-	border-radius: 25px;
+	border-radius: 8px;
 }
 
 .search_wrap.search_wrap_6 .search_box .input{
