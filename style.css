@@ -56,6 +56,10 @@ header {
     align-items: center;
 }
 
+.nav-links ul {
+    
+}
+
 .nav-links li {
     display: inline-block;
     align-self: center;
