@@ -14,10 +14,132 @@ html {
     background-color: white;
 }
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.recipe-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-content: center;
+    justify-content: space-around;
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+
+.recipe-grid-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 4rem 0rem 4rem;
+    text-align: center;
+}
+
+.recipe-grid-card h4 {
+    color: rgb(175, 175, 175);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.recipe-grid-card h2 {
+    font-weight: 400;
+}
+
+.recipe-grid-card a {
+    color: #F93F23;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.recipe-grid-card hr {
+    display: block;
+    border-right: 10rem solid lightgray;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.container-recipe-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 12rem;
+}
+
+.recipe-card-background {
+    background-color: #FAEFC8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 15px #f940237c;
+}
+
+.recipe-card-background-margin {
+    margin-right: 6rem;
+}
+
+.recipe-card-background h1 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-weight: 400;
+}
+
+.recipe-card-background img {
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.recipe-card-table-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.recipe-card-table-img table, th, td {
+    border: #757575 1px solid;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 0.3rem;
+}
+
+.recipe-card-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-bottom: 6rem;
+    text-align: justify;
+}
+
+.recipe-card-description-author-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 3rem;
+}
+
+/*Media queries missing for nows*/
+
 /*
 color pallet 
 Logo(only) - #EF4229
-the rest Orange/red - #HF93F23
+the rest Orange/red - #F93F23
 Background color - White #FFF
 Grey buttons - #333333
 Recipe yellow background - #FAEFC8
