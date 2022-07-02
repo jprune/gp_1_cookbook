@@ -12,26 +12,28 @@
     --primaryColor: rgba(249, 63, 35, 1);
     --secondaryColor: #EF4229;
     --terciaryColor: #fff;
-    --forthColor: #333333;
+    --forthColor: rgba(128, 128, 128, 1);
     --fifthColor: #FAEFC8;
+    --sixthColor: rgb(0, 0, 0);
 
     /* Fonts */
     --fontPrimary: 'Source Serif Pro', serif;
     --fontSecondary: 'Poppins', sans-serif;
-    --fontLogo: 
+    --fontLogo: 'Permanent Marker', cursive;
 
+    /* hover effects */
+    --hoverPrimary:  rgba(249, 63, 35, 0.8);
 }
 
-
-/* Font CSS also to include - 
+/*font-family: 'Permanent Marker', cursive;
 font-family: 'Poppins', sans-serif;
 font-family: 'Source Serif Pro', serif;*/
 
 html {
     font-size: 16px;
     font-family: 'Source Serif Pro', serif, 'Poppins', sans-serif;
-    color: black;
-    background-color: white;
+    color: var(--sixthColor);
+    background-color: var(--terciaryColor);
 }
 
 /*Navbar section in the header*/
@@ -52,8 +54,8 @@ header {
     cursor: pointer;
     display: flex;
     font-weight: 900;
-    color: #F93F23;
-    font-family: 'Poppins', sans-serif;
+    color: var(--secondaryColor);
+    font-family: var(--fontLogo);
 }
 
 /* .logo i {
@@ -62,12 +64,12 @@ header {
 } */
 
 .menu {
-    color: gray;
+    color: var(--forthColor);
     font-size: 40px;
 }
 
 .menu:hover {
-    color: #F93F23;
+    color: var(--primaryColor)
 }
 
 .nav-links {
@@ -84,15 +86,15 @@ header {
     display: inline-block;
     align-self: center;
     padding: 0px 10px;
-    color: #F93F23;
+    color: var(--primaryColor);
     font-size: 35px;
 }
 
 .nav-links p {
     display: inline-block;
     align-self: center;
-    color: gray;
-    font-family: 'Poppins';
+    color: var(--forthColor);
+    font-family: var(--fontPrimary);
     margin-right: 8px;
 }
 
@@ -102,7 +104,7 @@ header {
 }
 
 .nav-links li i:hover {
-    color: gray;
+    color: var(--forthColor);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 20px 40px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     transform: scale(1.10);
 }
@@ -110,17 +112,17 @@ header {
 header a button {
     padding: 9px 25px;
     background-color: transparent;
-    color: #F93F23;
-    border: 2px solid #F93F23;
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    font-family: 'Poppins';
+    font-family: var(--fontSecondary);
 }
 
 header a button:hover {
-    background-color: rgba(249, 63, 35, 0.8);
-    color: #fff;
+    background-color: var(--hoverPrimary);
+    color: var(--terciaryColor);
     transform: scale(1.10);
 }
 
@@ -145,14 +147,14 @@ header a button:hover {
 }
 
 .search-bar p {
-    font-family: 'Poppins';
+    font-family: var(--fontSecondary);
 }
 
 .search-bar h2 {
     display: flex;
     margin-top: 150px;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
+    color: var(--terciaryColor);
+    font-family: var(--fontSecondary);
     font-size: 5em;
 }
 
@@ -185,14 +187,15 @@ header a button:hover {
 	right: 0;
 	width: 60px;
 	height: 100%;
-	background: #F93F23;
+	background: var(--primaryColor);
 	z-index: 1;
 	cursor: pointer;
 }
 
 .search_wrap .search_box .btn:hover{
-	background: #c13e20;
+	background-color: var(--forthColor);
 }
+
 
 .search_wrap.search_wrap_6 .search_box .input{
 	border-radius: 8px;
@@ -204,7 +207,7 @@ header a button:hover {
 	top: 8px;
 	right: 5px;
 	border-radius: 3px;
-	color: #fff;
+	color: var(--terciaryColor);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -231,10 +234,10 @@ header a button:hover {
 }
 
 .footer {
-    background-color: #F93F23;
+    background-color: var(--primaryColor);
     padding: 70px 0;
     line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fontSecondary);
 }
 
 .footer ul {
@@ -248,11 +251,15 @@ header a button:hover {
 
 .footer-col h4 {
     font-size: 18px;
-    color: #fff;
+    color: var(--terciaryColor);
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
     position: relative;
+}
+.logo-footer {
+    font-family: var(--fontLogo);
+    color: var(--fifthColor)!important;
 }
 
 .footer-col h4::before {
@@ -260,7 +267,7 @@ header a button:hover {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: gray;
+    background-color: var(--forthColor);
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -273,16 +280,16 @@ header a button:hover {
 .footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
-    color: #fff;
+    color: var(--terciaryColor);
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
+    color: var(--sixthColor);
     display: block;
     transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-    color: #ffffff;
+    color: var(--terciaryColor);
     padding-left: 10px;
 }
 
@@ -295,14 +302,14 @@ header a button:hover {
     text-align: center;
     line-height: 40px;
     font-size: 30px;
-    color: #ffffff;
+    color: var(--terciaryColor);
     border-radius: 8px;
     transition: all 0.5s ease;
 }
 
 .footer-social-links a:hover {
-    color: #F93F23;
-    background-color: #ffffff;
+    color: var(--primaryColor);
+    background-color: var(--terciaryColor);
 }
 
 
