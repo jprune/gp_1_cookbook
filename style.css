@@ -7,6 +7,26 @@
     box-sizing: border-box;
 }
 
+:root {
+    /* Colors */
+    --primaryColor: rgba(249, 63, 35, 1);
+    --secondaryColor: #EF4229;
+    --terciaryColor: #fff;
+    --forthColor: #333333;
+    --fifthColor: #FAEFC8;
+
+    /* Fonts */
+    --fontPrimary: 'Source Serif Pro', serif;
+    --fontSecondary: 'Poppins', sans-serif;
+    --fontLogo: 
+
+}
+
+
+/* Font CSS also to include - 
+font-family: 'Poppins', sans-serif;
+font-family: 'Source Serif Pro', serif;*/
+
 html {
     font-size: 16px;
     font-family: 'Source Serif Pro', serif, 'Poppins', sans-serif;
