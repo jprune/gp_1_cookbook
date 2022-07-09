@@ -6,17 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STARkitchen - recipes out of the world</title>
     <link rel="stylesheet" href="./style.css">
-
         <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@200;300;500;700&family=Source+Serif+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6fb973c8cc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--newest recipes section-->
-    <div class="newreps">
-        <div class="newreps-header cols-1">
-            <h1>FEATURED RECIPES</h1>
+
+<!-- Our Header and Navbar section starts here -->   
+
+    <header>
+        <a href="#" class="menu"><i class="fa-solid fa-bars"></i></a>
+<!--        <img class="logo" src="./Images/StarKitchen logo.png" alt="logo"> -->
+        <h1 class="logo">STARKITCHEN</h1>
+        <nav>
+            <ul class="nav-links">
+                <p>Follow us</p>
+                <a href="#"><li><i class="fa-brands fa-facebook-square"></i></li></a>
+                <a href="#"><li><i class="fa-brands fa-twitter-square"></i></li></a>
+                <a href="#"><li><i class="fa-brands fa-instagram-square"></i></li></a>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Subscribe</button></a>
+    </header>
+
+<!-- Our Main "header" container -->
+
+    <main>
+        <div class="header-container">
+<!--            <img src="./Images/BreadSmaller.jpg" alt="bread background"> -->
+            <div class="search-bar">
+                <h2>Find a Recipe</h2>
+                <div class="search_wrap search_wrap_6">
+                    <div class="search_box">
+                        <input type="text" class="input" placeholder="search...">
+                        <div class="btn">
+                            <p>Search</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+       <!--newest recipes section-->
+        <div class="newreps">
+            <div class="newreps-header cols-1">
+                <h1>FEATURED RECIPES</h1>
         </div>
 
         <div class="newreps-bigpicure">
@@ -109,11 +145,60 @@
             <div class="newreps-footer-field">
                     <input type="text" aria-label="Newsletter sign up email address" placeholder="Your email" maxlength="50" value="">
             </div>
+
             <div class="newreps-footer-button">      
                 <button type="submit">sign up</button>
             </div>
         </div>    
         
     </div> 
+
+ 
+    </main>
+    
+    <!-- Our Footer section -->
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Imprint</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Recipes</h4>
+                <ul>
+                    <li><a href="#">Breakfast</a></li>
+                    <li><a href="#">Lunch</a></li>
+                    <li><a href="#">Dinner</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Desserts</h4>
+                <ul>
+                    <li><a href="#">Fruit & Plant based</a></li>
+                    <li><a href="#">Dairy based</a></li>
+                    <li><a href="#">Sweet tooth</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="logo-footer">STARKITCHEN <br> <br>Follow us</h4>
+                <div class="footer-social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
 </body>
 </html>
