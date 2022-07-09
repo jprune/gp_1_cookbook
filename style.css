@@ -39,6 +39,7 @@ hr {
     align-items: center;
     margin: 4rem 4rem 0rem 4rem;
     text-align: center;
+    max-width: 33%;
 }
 
 .recipe-grid-card h4 {
@@ -49,6 +50,7 @@ hr {
 
 .recipe-grid-card h2 {
     font-weight: 400;
+    max-width: 300px;
 }
 
 .recipe-grid-card a {
