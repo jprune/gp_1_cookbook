@@ -345,10 +345,16 @@ header a button:hover {
     .header-container {
         background-size: cover;
     }
-    .search-bar .input {
-        width: 100%;
+    .search_wrap .search_box .input {
+        width: 70%;
+        height: 100%;
+        align-content: center;
+        flex-wrap: wrap;
     }
-    
+    .search_wrap.search_wrap_6 .search_box .btn {
+        width: 125px;
+        right: 155px;
+    }
     footer {
         width: 100%;
         }
