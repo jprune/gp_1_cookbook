@@ -57,6 +57,12 @@ hr {
     padding-bottom: 1rem;
 }
 
+.recipe-grid-card img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
 .recipe-grid-card hr {
     display: block;
     border-right: 10rem solid lightgray;
@@ -64,75 +70,6 @@ hr {
     margin-bottom: 1.5rem;
 }
 
-.container-recipe-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 12rem;
-}
-
-.recipe-card-background {
-    background-color: #FAEFC8;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 15px #f940237c;
-}
-
-.recipe-card-background-margin {
-    margin-right: 6rem;
-}
-
-.recipe-card-background h1 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    font-weight: 400;
-}
-
-.recipe-card-background img {
-    border-radius: 0.5rem;
-    width: 100%;
-}
-
-.recipe-card-table-img {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    margin-bottom: 3rem;
-    align-items: center;
-}
-
-.recipe-card-table-img table, th, td {
-    border: #757575 1px solid;
-    border-collapse: collapse;
-    text-align: left;
-    padding: 0.3rem;
-}
-
-.recipe-card-description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    margin-bottom: 6rem;
-    text-align: justify;
-}
-
-.recipe-card-description-author-date {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 3rem;
-}
 
 /*Media queries missing for nows*/
 
