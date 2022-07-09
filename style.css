@@ -7,11 +7,354 @@
     box-sizing: border-box;
 }
 
+:root {
+    /* Colors */
+    --primaryColor: rgba(249, 63, 35, 1);
+    --secondaryColor: #EF4229;
+    --terciaryColor: #fff;
+    --forthColor: rgba(128, 128, 128, 1);
+    --fifthColor: #FAEFC8;
+    --sixthColor: rgb(0, 0, 0);
+
+    /* Fonts */
+    --fontPrimary: 'Source Serif Pro', serif;
+    --fontSecondary: 'Poppins', sans-serif;
+    --fontLogo: 'Permanent Marker', cursive;
+
+    /* hover effects */
+    --hoverPrimary:  rgba(249, 63, 35, 0.8);
+
+/* Media queries 
+    --desktop: 1200px;
+    --tablet: 768px;
+    --phone: 480px; */
+}
+
+/*font-family: 'Permanent Marker', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Source Serif Pro', serif;*/
+
 html {
     font-size: 16px;
-    font-family: 'Source Serif Pro', serif;
-    color: black;
-    background-color: white;
+    font-family: 'Source Serif Pro', serif, 'Poppins', sans-serif;
+    color: var(--sixthColor);
+    background-color: var(--terciaryColor);
+}
+
+/*Navbar section in the header*/
+
+li, button {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: static;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    font-weight: 900;
+    color: var(--secondaryColor);
+    font-family: var(--fontLogo);
+}
+
+/* .logo i {
+    width: 5px;
+    height: 5px;
+} */
+
+.menu {
+    color: var(--forthColor);
+    font-size: 40px;
+}
+
+.menu:hover {
+    color: var(--primaryColor)
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline-block;
+    align-self: center;
+    padding: 0px 10px;
+    color: var(--primaryColor);
+    font-size: 35px;
+}
+
+.nav-links p {
+    display: inline-block;
+    align-self: center;
+    color: var(--forthColor);
+    font-family: var(--fontPrimary);
+    margin-right: 8px;
+}
+
+.nav-links li i {
+    transition: all 0.5s ease;
+    align-self: center;
+}
+
+.nav-links li i:hover {
+    color: var(--forthColor);
+/*    box-shadow: rgba(0, 0, 0, 0.19) 0px 20px 40px, rgba(0, 0, 0, 0.23) 0px 6px 6px;*/
+    transform: scale(1.20);
+}
+
+header a button {
+    padding: 9px 25px;
+    background-color: transparent;
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: var(--fontSecondary);
+}
+
+header a button:hover {
+    background-color: var(--hoverPrimary);
+    color: var(--terciaryColor);
+    transform: scale(1.10);
+}
+
+/* Main-container for the header section and search bar */
+
+.header-container {
+    position: relative;
+    top: 30px;
+    width: 100%;
+    height: 500px;
+    background-image: url(./Images/Bread.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-bar p {
+    font-family: var(--fontSecondary);
+}
+
+.search-bar h2 {
+    display: flex;
+    margin-top: 150px;
+    color: var(--terciaryColor);
+    font-family: var(--fontSecondary);
+    font-size: 5em;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.search_wrap{
+	width: 500px;
+	margin: 38px auto;
+}
+
+.search_wrap .search_box{
+	position: relative;
+	width: 500px;
+	height: 60px;
+}
+
+.search_wrap .search_box .input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	border-radius: 3px;
+	font-size: 18px;
+    border: none;
+}
+
+.search_wrap .search_box .btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 100%;
+	background: var(--primaryColor);
+	z-index: 1;
+	cursor: pointer;
+}
+
+.search_wrap .search_box .btn:hover{
+	background-color: var(--forthColor);
+}
+
+
+.search_wrap.search_wrap_6 .search_box .input{
+	border-radius: 8px;
+}
+
+.search_wrap.search_wrap_6 .search_box .btn {
+	width: 125px;
+	height: 45px;
+	top: 8px;
+	right: 5px;
+	border-radius: 3px;
+	color: var(--terciaryColor);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search_wrap.search_wrap_6 .search_box .btn{
+	border-radius: 8px;
+}
+
+.search_wrap.search_wrap_6 .search_box .input{
+	padding-right: 145px;
+}
+
+/* Our Footer CSS section */
+
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    background-color: var(--primaryColor);
+    padding: 70px 0;
+    line-height: 1.5;
+    font-family: var(--fontSecondary);
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: var(--terciaryColor);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.logo-footer {
+    font-family: var(--fontLogo);
+    color: var(--fifthColor)!important;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--forthColor);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--terciaryColor);
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--sixthColor);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: var(--terciaryColor);
+    padding-left: 10px;
+}
+
+.footer-social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(247, 243, 243, 0.23);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    color: var(--terciaryColor);
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+.footer-social-links a:hover {
+    color: var(--primaryColor);
+    background-color: var(--terciaryColor);
+}
+
+@media screen and (max-width: 768px) {
+  
+    .nav-links {
+        display: none;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    header  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    .search-bar h2 {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    header button {
+        width: 100%;
+
+    }
+    .header-container {
+        background-size: cover;
+    }
+    .search_wrap .search_box .input {
+        width: 70%;
+        height: 100%;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .search_wrap.search_wrap_6 .search_box .btn {
+        width: 125px;
+        right: 155px;
+    }
+    footer {
+        width: 100%;
+        }
+    
 }
 
 hr {
@@ -139,8 +482,13 @@ hr {
 /*
 color pallet 
 Logo(only) - #EF4229
-the rest Orange/red - #F93F23
+
+the rest Orange/red - #F93F23 and rgba(249, 63, 35, 1) "for opacity"
 Background color - White #FFF
 Grey buttons - #333333
 Recipe yellow background - #FAEFC8
 */
+
+/* Font CSS also to include - 
+font-family: 'Poppins', sans-serif;
+font-family: 'Source Serif Pro', serif;*/
