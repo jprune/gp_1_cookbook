@@ -409,6 +409,38 @@ hr {
 }
 
 
+.recipe-grid-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 4rem 0rem 4rem;
+    text-align: center;
+    max-width: 33%;
+}
+
+.recipe-grid-card h2 {
+    font-weight: 400;
+    max-width: 300px;
+}
+
+.recipe-grid-card a {
+    color: #F93F23;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.recipe-grid-card img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.recipe-grid-card hr {
+    display: block;
+    border-right: 10rem solid lightgray;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
 
 .newreps-3imgtext {
     font-size: 12px;
@@ -512,7 +544,7 @@ hr {
 .newreps-ours-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-aroundcenter;
+    justify-content: center;
     margin: 5px;
     align-items: center;
 }

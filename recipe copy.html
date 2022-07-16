@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARkitchen - recipes out of the world</title>
+    <link rel="stylesheet" href="./style.css">
+
+        <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+    <!--Tailwind CSS script-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+                'mainfont': ['Source Serif Pro', 'ui-serif', 'serif'],
+                'bodyfont': ['Poppins', 'ui-sans-serif', 'sans-serif'],
+            },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/2058d0c819.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="font-bodyfont p-5 lg:px-44">
+    <!--Recipe Meta & Image-->
+    <div class="flex flex-col lg:flex-row lg:justify-between lg:flex-wrap mt-10">
+        <div class="flex flex-col items-center justify-center lg:w-6/12">
+            <h1 class="text-3xl lg:text-5xl font-semibold font-mainfont text-center">Beer-Can cabbage <br> sandwiches</h1>
+            <h3 class="text-sm pt-3">BY STARKITCHEN</h3>
+            <p class="text-sm">July 02, 2022</p>
+            <div class="flex flex-row items-center p-3">
+                <button class="flex flex-row items-center bg-gray-300 p-2 rounded-lg">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <p class="text-md md:text-xl pl-2">SAVE RECIPE</p>
+                </button>
+            </div>
+        </div>
+        <div class="lg:w-6/12 pt-2 lg:pl-5">
+            <img src="./Images/califlower_s_2.png"
+        </div>
+    </div>
+
+    <!--Ingredients-->
+    <div class="lg:flex lg:flex-row lg:pt-10">
+        <table class="table-auto border-collapse border border-slate-500 mt-6 bg-gray-300 lg:w-6/12">
+            <thead>
+                <tr>
+                    <th class="border border-slate-600">Quantity</th>
+                    <th class="border border-slate-600">Ingredients</th>
+                </tr>  
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-slate-700">1</td>
+                    <td class="border border-slate-700">large purple cabbage (about 3 1/2 pounds)</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">2 Tbsp</td>
+                    <td class="border border-slate-700">vegetable oil</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">1/2 teaspoon</td>
+                    <td class="border border-slate-700">kosher salt, plus more</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">1/4 teaspoon</td>
+                    <td class="border border-slate-700">freshly ground black pepper, plus more</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">1 (12-ounces)</td>
+                    <td class="border border-slate-700">can pale lager</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">2 cups</td>
+                    <td class="border border-slate-700">homemade or store-bought barbecue sauce (preferably Kraft Original Barbecue Sauce), divided</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">1/2</td>
+                    <td class="border border-slate-700">large white onion, cut into 1/2" rings</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">1/4 cup</td>
+                    <td class="border border-slate-700">mayonnaise</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">2 Tbsp.</td>
+                    <td class="border border-slate-700">apple cider vinegar</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">1/4 teaspoon</td>
+                    <td class="border border-slate-700">honey</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">1</td>
+                    <td class="border border-slate-700">medium carrot (about 6 ounces), coarsely grated</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">1/4 cup</td>
+                    <td class="border border-slate-700">finely chopped red onion</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">6</td>
+                    <td class="border border-slate-700">seeded Kaiser rolls or sturdy hamburger buns</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">12 slices</td>
+                    <td class="border border-slate-700">cheddar cheese</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-700">1 glass</td>
+                    <td class="border border-slate-700">Sliced pickled jalapeños (for serving)</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <!--Recipe description-->
+        <div class="pt-6 lg:w-6/12 lg:ml-10">
+            <p class="text-justify"><b>Step 1:</b>
+                Prepare a grill for medium-high heat. Cut a 3x3" square around core of cabbage at the base. Carefully remove core with knife. Using knife and a spoon, create a 3"–deep cavity in cabbage, big enough to hold a beer can. Discard core but reserve leftover cabbage from hollowing out cavity. Using a brush, coat cabbage with oil, then season generously with salt and pepper.
+                <br>
+                <br>
+                <b>Step 2:</b>
+                Pour out (or drink) half of the beer. Place beer can in cavity of cabbage so cabbage sits upright. Transfer to grill. Using brush, generously coat cabbage with 3 Tbsp. barbecue sauce. Cover grill and cook cabbage, brushing with sauce every 15 minutes, until outer leaves are crispy and dark brown and cabbage is cooked through and tender when pierced with a paring knife, 45–50 minutes total. During the last 5 minutes of cooking, grill white onion rings until charred.
+                <br>
+                <br>
+                <b>Step 3:</b>
+                Meanwhile, whisk mayonnaise, vinegar, honey, and remaining 1/2 tsp. salt and 1/4 tsp. pepper in a medium bowl. Thinly slice reserved cabbage. Add to bowl with dressing along with carrot and red onion; toss to combine.
+                <br>
+                <br>
+                <b>Step 4:</b>
+                Remove cabbage from grill and discard can. Let cool slightly. Cut grilled cabbage in half lengthwise, then slice each half crosswise into 3/4" strips. Coarsely chop white onion rings and toss with cabbage in a medium bowl with remaining 1 1/4 cups barbecue sauce (you should have about 6 cups barbecued cabbage).
+                <br>
+                <br>
+                <b>Step 5:</b>
+                Halve rolls and grill until toasted, about 30 seconds. Arrange 1 cup barbecued cabbage on each bottom bun. Top each with 2 slices cheese, 1/4 cup cabbage slaw, and pickled jalapeños, if using. Top with top buns.
+                <br>
+                <br>
+                <b>Step 6:</b>
+                Barbecued cabbage and coleslaw can be made 3 days ahead; cover separately and chill. Reheat gently in a covered pot on the stovetop or in the microwave.
+            </p>
+        </div>
+       
+        
+    </div>
+     <!--horizontal line-->
+    <div class="pt-10 lg:w-full">
+            <div class="w-full border-t border-gray-300"></div>
+        </div>
+    <!--Rating-->
+    <div class="flex flex-col w-full items-center py-10">
+        <h3 class="text-3xl">RATE THIS RECIPE</h3>
+        <div class="pt-4">
+            <i class="fa-solid fa-star fa-2xl hover:text-red-500"></i>
+            <i class="fa-solid fa-star fa-2xl hover:text-red-500"></i>
+            <i class="fa-solid fa-star fa-2xl hover:text-red-500"></i>
+            <i class="fa-solid fa-star fa-2xl hover:text-red-500"></i>
+            <i class="fa-solid fa-star fa-2xl hover:text-red-500"></i>
+        </div>
+    </div>
+
+    <!--Category tags-->
+    <div class="lg:w-full py-5">
+        <div class="w-full border-t border-gray-300"></div>
+    </div>
+    <div class="flex overflow-x-scroll lg:justify-center pt-5 lg:pb-5 w-full">
+        <button class="flex flex-shrink-0 rounded-full px-4 py-2 mr-2 bg-red-100 hover:bg-red-500">Vegeterian</button>
+        <button class="flex flex-shrink-0 rounded-full px-4 py-2 mr-2 bg-red-100 hover:bg-red-500">Vegeterian</button>
+        <button class="flex flex-shrink-0 rounded-full px-4 py-2 mr-2 bg-red-100 hover:bg-red-500">Vegeterian</button>
+        <button class="flex flex-shrink-0 rounded-full px-4 py-2 mr-2 bg-red-100 hover:bg-red-500">Vegeterian</button>
+        <button class="flex flex-shrink-0 rounded-full px-4 py-2 mr-2 bg-red-100 hover:bg-red-500">Vegeterian</button>
+        <button class="flex flex-shrink-0 rounded-full px-4 py-2 mr-2 bg-red-100 hover:bg-red-500">Vegeterian</button>
+    </div>
+    <!--Related recipies-->
+    <div class="lg:w-full py-5">
+        <div class="w-full border-t border-gray-300"></div>
+    </div>
+    <div class="flex flex-col lg:flex-row lg:w-full lg:justify-around">
+        <div class="flex flex-col items-center mb-10 pb-5 bg-gray-300 rounded-md">
+            <img class="p-3" src="./Images/5 newest_1.webp">
+            <h4 class="text-lg">ASIAN</h4>
+            <h2 class="font-bold">Grilled Whole Cauliflower with Miso Mayo</h2>
+            <hr>
+            <a href="#">BY STARTKITCHEN</a>
+        </div>
+        <div class="flex flex-col items-center mb-10 pb-5 bg-gray-300 rounded-md">
+            <img class="p-3" src="./Images/5 newest_2.webp">
+            <h4 class="text-lg">SANDWICH</h4>
+            <h2 class="font-bold">Beer-Can Cabbage Sandwiches</h2>
+            <hr>
+            <a href="#">BY STARTKITCHEN</a>
+        </div>
+        <div class="flex flex-col items-center mb-10 pb-5 bg-gray-300 rounded-md">
+            <img class="p-3" src="./Images/5 newest_3.webp">
+            <h4 class="text-lg">DRINKS</h4>
+            <h2 class="font-bold">Grilled Stone Fruit Sangria</h2>
+            <hr>
+            <a href="#">BY STARTKITCHEN</a>
+        </div>
+    </div>
+</body>
+</html>
