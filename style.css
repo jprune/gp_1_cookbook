@@ -408,6 +408,15 @@ hr {
     padding-right: 12rem;
 }
 
+.recipe-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-content: center;
+    justify-content: space-around;
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
 
 .recipe-grid-card {
     display: flex;
