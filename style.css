@@ -136,7 +136,7 @@ header a button {
 }
 
 header a button:hover {
-    background-color: var(--hoverPrimary);
+    background-color: var(--secondaryColor);
     color: var(--terciaryColor);
     transform: scale(1.10);
 }
